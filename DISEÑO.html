@@ -1,0 +1,100 @@
+<html>
+<head>
+<style>
+input [type=button], input[type=submit]
+{
+background-color= white;
+border= none;
+color=black;
+font=weight; bold;
+padding= 6px 20px;
+text=align: center;
+font=size:16px;
+margin: 4px 4px;
+box-shadow: 3px 3px 3px black;
+position: center;
+font-family: Arial;
+}
+
+input[type="text"]
+{
+font-family: Arial;
+color: black;
+background-color:white;
+padding:4px;
+text-align: left;
+font-size: 16px;
+margin: 4px 4px;
+box-shadow: 2px 2px 2px black;
+}
+
+body
+{
+background-color: #338DFF;
+}
+
+label
+{
+font-family: Arial;
+padding:4px;
+font-weight: bold;
+color: black;
+text-align: center;
+font-size: 18px
+}
+
+table
+{
+background-color: #F0FFFF;
+padding: 5px 5px;
+}
+
+td
+{
+padding: 4px 4px;
+}
+
+
+-</style>
+-</head>
+
+<body>
+<center>
+<form name="Mantenimiento" action="mantenimiento.php" method="post">
+<table border=<"1">
+
+<tr>
+<td colspan="5"><label>Mantenimiento Peliculas </label></td>
+-</tr>
+
+<tr><td colspan="5"><label>Registrar Peliculas</td><td><input type="text" value="" maxlength="100" name="txtNoPelicula"></td>
+</tr>
+
+<tr><td><label>NoPelicula</label></td><td><input type="text" value="" maxlength="20" name="txtnopeli" maxlength="20" size="10"></td>
+<td><label>Titulo</label></td><td><input type="text" value="" maxlength="100" name="txttitulo"></td>
+<td> <label>Formato</label></td><td><input type="text" value="" maxlength="15" size="10" name="txtformato"></td>
+<td> <label>Genero</label></td><td><input type="text" value="" maxlength="20" size="10" name="txtgenero"></td>
+<td> <label>Cantidad</label></td><td><input type="text" value="" maxlength="20" size="10" name="txtcant"></td>
+</tr>
+
+<tr><td colspan="5" align="center">
+<input type="submit" value="Nuevo" name="limpiardatos">
+<input type="submit" value="Registrarla" name="registrardatos">
+<input type="submit" value="Modificar" name="modificardatos">
+<input type="submit" value="Eliminar" name="eliminardatos">
+</td>
+</tr>
+
+<tr><td colspan="5"><label>Listado de Peliculas</label></td></tr>
+
+<tr><td><label>No_Pelicula</label></td>
+<td><label>Titulo</label></td>
+<td><label>Formato</label></td>
+<td><label>Genero</label></td>
+<td><label>Cantidad</label></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+<html>
